@@ -1,0 +1,9 @@
+/Users/johncantrell/Development/romer-sdk/bindings/uniffi-bindgen/target/debug/deps/libaskama_derive-ece4401653d9c2e2.dylib: /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/lib.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/config.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/generator.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/heritage.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/input.rs
+
+/Users/johncantrell/Development/romer-sdk/bindings/uniffi-bindgen/target/debug/deps/askama_derive-ece4401653d9c2e2.d: /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/lib.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/config.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/generator.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/heritage.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/input.rs
+
+/Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/lib.rs:
+/Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/config.rs:
+/Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/generator.rs:
+/Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/heritage.rs:
+/Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/askama_derive-0.12.4/src/input.rs:

@@ -1,0 +1,10 @@
+/Users/johncantrell/Development/ldk-node/bindings/uniffi-bindgen/target/debug/deps/libthiserror-e8ef827bf7a9de83.rmeta: /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/lib.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/aserror.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/display.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/provide.rs
+
+/Users/johncantrell/Development/ldk-node/bindings/uniffi-bindgen/target/debug/deps/libthiserror-e8ef827bf7a9de83.rlib: /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/lib.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/aserror.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/display.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/provide.rs
+
+/Users/johncantrell/Development/ldk-node/bindings/uniffi-bindgen/target/debug/deps/thiserror-e8ef827bf7a9de83.d: /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/lib.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/aserror.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/display.rs /Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/provide.rs
+
+/Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/lib.rs:
+/Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/aserror.rs:
+/Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/display.rs:
+/Users/johncantrell/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.56/src/provide.rs:

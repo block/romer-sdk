@@ -1,0 +1,1 @@
+{"rustc":13590448245349327861,"features":"[\"async\", \"default\", \"std\"]","target":8522087609281389817,"profile":4374887572363265115,"path":3982583002904544009,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/oneshot-uniffi-be39ca4a30439dee/dep-lib-oneshot-uniffi"}}],"rustflags":[],"metadata":17743168115357722603,"config":2202906307356721367,"compile_kind":0}

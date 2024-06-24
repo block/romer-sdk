@@ -1,0 +1,12 @@
+[bindings.kotlin]
+package_name = "org.cequals.romer"
+cdylib_name = "romer"
+
+[bindings.python]
+cdylib_name = "romer"
+
+[bindings.swift]
+module_name = "Romer"
+ffi_module_name = "RomerFFI"
+ffi_module_filename ="RomerFFI"
+cdylib_name = "romer"

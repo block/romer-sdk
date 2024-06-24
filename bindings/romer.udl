@@ -1,0 +1,127 @@
+namespace romer {};
+
+interface Romer {
+    [Throws=RomerError]
+    constructor([ByRef]string api_token);
+    [Throws=RomerError]
+	Bolt11Invoice receive(u64 amount_sat, [ByRef]string description);
+    [Throws=RomerError]
+	u64 send([ByRef]string invoice);
+    [Throws=RomerError]
+	Txid send_onchain([ByRef]string address, u64 amount_sat);
+	sequence<PaymentDetails> list_payments();
+    boolean invoice_paid([ByRef]Bolt11Invoice invoice);
+    Balances balance();
+	Status status();
+};
+
+dictionary Status {
+    string node_id;
+	boolean connected;
+	boolean usable_channels;
+	u32 best_block_height;
+	BlockHash best_block_hash;
+	u64? latest_wallet_sync_timestamp;
+	u64? latest_onchain_wallet_sync_timestamp;
+	u64? latest_fee_rate_cache_update_timestamp;
+	u64? latest_rgs_snapshot_timestamp;
+};
+
+[Error]
+enum RomerError {
+    "InvalidAPIToken",
+    "NetworkNotSupported",
+    "InvalidBolt11Invoice",
+    "InvalidBitcoinAddress",
+    "InvalidOfferId",
+    "InvalidPaymentId",
+    "InvalidPaymentHash",
+    "InvalidPaymentPreimage",
+    "InvalidPaymentSecret",
+    "FailedToBuildNode",
+    "LDKNodeError",
+    "RecipientRejected",
+	"RetriesExhausted",
+	"PaymentExpired",
+	"RouteNotFound",
+	"UnexpectedError",
+};
+
+[Enum]
+interface PaymentKind {
+	Onchain();
+	Bolt11(PaymentHash hash, PaymentPreimage? preimage, PaymentSecret? secret);
+	Bolt11Jit(PaymentHash hash, PaymentPreimage? preimage, PaymentSecret? secret, LSPFeeLimits lsp_fee_limits);
+	Bolt12Offer(PaymentHash? hash, PaymentPreimage? preimage, PaymentSecret? secret, OfferId offer_id);
+	Bolt12Refund(PaymentHash? hash, PaymentPreimage? preimage, PaymentSecret? secret);
+	Spontaneous(PaymentHash hash, PaymentPreimage? preimage);
+};
+
+enum PaymentDirection {
+	"Inbound",
+	"Outbound",
+};
+
+enum PaymentStatus {
+	"Pending",
+	"Succeeded",
+	"Failed",
+};
+
+dictionary LSPFeeLimits {
+	u64? max_total_opening_fee_msat;
+	u64? max_proportional_opening_fee_ppm_msat;
+};
+
+dictionary PaymentDetails {
+	PaymentId id;
+	PaymentKind kind;
+	u64? amount_msat;
+	PaymentDirection direction;
+	PaymentStatus status;
+    u64 latest_update_timestamp;
+};
+
+[NonExhaustive]
+enum Network {
+	"Bitcoin",
+	"Testnet",
+	"Signet",
+	"Regtest",
+};
+
+dictionary Balances {
+	u64 total_onchain_balance_sats;
+	u64 spendable_onchain_balance_sats;
+	u64 total_anchor_channels_reserve_sats;
+	u64 total_lightning_balance_sats;
+    u64 outbound_capacity_lightning_sats;
+    u64 inbound_capacity_lightning_sats;
+};
+
+[Custom]
+typedef string Txid;
+
+[Custom]
+typedef string BlockHash;
+
+[Custom]
+typedef string Address;
+
+[Custom]
+typedef string Bolt11Invoice;
+
+[Custom]
+typedef string OfferId;
+
+[Custom]
+typedef string PaymentId;
+
+[Custom]
+typedef string PaymentHash;
+
+[Custom]
+typedef string PaymentPreimage;
+
+[Custom]
+typedef string PaymentSecret;
